@@ -33,6 +33,9 @@ app.use("/api/plans", planRoutes);
 
 app.use("/api/dashboard", dashboardRoutes);
 
+app.get("/", (req, res) => {
+  res.send("API is working!");
+});
 
 app.use(errorHandler);
 
